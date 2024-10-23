@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+main{
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.openModalButton{
+    padding: 0.5rem 1rem;
+    background-color: green;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+}
+
+.overlay{
+    background-color: rgba(45, 48, 48, 0.723);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.modal__content{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.modal__buttons{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.close{
+    display: none;
+}
+
+.close__button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.overFlowHidden{
+    overflow: hidden;
+}
